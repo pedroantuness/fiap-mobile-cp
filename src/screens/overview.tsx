@@ -42,7 +42,7 @@ export default function Overview() {
           <Ionicons name="key" size={32} color="black." />
           <TextInput
             style={styles.inputTexts}
-            secureTextEntry={true}
+            secureTextEntry
             placeholder="Password"
             value={passwordInput}
             onChangeText={(password) => setPasswordInput(password)}
@@ -55,7 +55,7 @@ export default function Overview() {
           <Text
             style={styles.forgotButton}
             onPress={() => {
-              alert('Redirecionando...');
+              alert('Levando a nova página...');
             }}>
             Forgot Password?
           </Text>
